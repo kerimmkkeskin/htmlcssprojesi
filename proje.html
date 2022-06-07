@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <!--
+      
+    -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html css sitesi</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            height: fit-content;
+            font-family: "DM Sans", sans-serif;
+            font-weight: 500;
+        }
+
+        .timeline_tarih {
+            margin-bottom: 5px;
+            font-size: 17.5px;
+            font-weight: 400;
+        }
+
+        .buyticket>p>i {
+            margin-right: 6px;
+        }
+
+        .buyticket>p {
+            margin-top: 15px;
+            font-size: 17.5px;
+        }
+
+        .navig {
+            height: 69px;
+            background-color: white;
+
+            vertical-align: middle;
+            position: fixed;
+            width: 100%;
+            z-index: 6;
+            color: black;
+            padding-top: 5px;
+
+
+
+        }
+
+        .navig h1 {
+            margin: 0;
+            padding-top: 12px;
+            margin-left: 203px;
+
+            font-size: 29px;
+            margin-right: 70px;
+            float: left;
+
+        }
+
+        .country_singer {
+
+            background: linear-gradient(rgba(0, 0, 0, 0.200), rgba(0, 0, 0, 0.200)), url(img/ust1.jpg);
+
+
+            background-attachment: fixed;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+
+            height: 753px;
+            width: 100%;
+
+            text-align: center;
+        }
+
+        .country_singer>h2 {
+            color: white;
+        }
+
+        .country_singer>h5 {
+            color: white;
+        }
+
+        li {
+            padding-top: 12px;
+            float: left;
+            margin-right: 47px;
+            font-size: 17.5px;
+            font-weight: 500;
+        }
+
+        li>a>i {
+            font-size: 20px;
+            font-weight: 700;
+
+        }
+
+        a {
+
+            color: black;
+            text-decoration: none;
+        }
+
+        .timeline_a {
+            transition: 500ms;
+            background-color: white;
+            z-index: 1;
+        }
+
+        .timeline_a:hover {
+            background-color: black;
+
+        }
+
+        .timeline_ab {
+            transition: 500ms;
+            background-color: white;
+            z-index: 1;
+        }
+
+        .timeline_ab:hover {
+            background-color: black;
+
+        }
+
+        .timeline_ab:visited {
+            background-color: black;
+
+        }
+
+        .buynow {
+            position: absolute;
+            top: 14px;
+            right: 217px;
+
+            border: 1px solid black;
+            margin: 0;
+
+            height: 45px;
+            letter-spacing: 1.3px;
+
+
+            padding-left: 23px;
+            padding-right: 23px;
+            border-radius: 3px;
+            
+        }
+
+      
+
+        .dikey_cizgi {
+            margin-left: auto;
+            margin-right: auto;
+            background-color: black;
+            height: 100px;
+            width: 0.1px;
+            margin-top: 45px;
+
+        }
+
+        .dikey_cizgi2 {
+            margin-left: auto;
+            margin-right: auto;
+            background-color: black;
+            height: 100px;
+            width: 1.6px;
+            margin-top: 45px;
+
+        }
+
+        .tourdiv {
+            color: rgb(35, 35, 35);
+            font-weight: 500;
+            width: 100%;
+
+
+            margin-top: 42px;
+
+        }
+
+        .day_of_date {
+            font-size: 80px;
+            font-weight: 700;
+            margin: 0;
+            margin-left: 203px;
+            padding-top: 15px;
+
+        }
+
+        .text_of_date {
+            margin: 0;
+            margin-left: 25px;
+            padding-top: 48px;
+            font-weight: 400;
+            font-size: 19px;
+        }
+
+        .tourdiv_satir {
+            width: 100%;
+            height: 142px;
+            clear: left;
+
+
+        }
+
+        .baslik {
+            font-size: 28px;
+            margin: 0;
+        }
+
+        .konum {
+            font-size: 19px;
+            font-weight: 400;
+            margin-top: 11px;
+
+
+        }
+        .konum>a>i{
+            margin-right: 5px;
+        }
+
+        .baslik_konum {
+            margin-left: 85px;
+            padding-top: 35px;
+            width: 400px;
+
+        }
+
+        .buyticket {
+            width: 232px;
+            height: 58px;
+            background-color: rgb(255, 45, 85);
+            border-radius: 7px;
+            margin-left: 152px;
+            margin-top: 42px;
+            text-align: center;
+            padding-top: 1px;
+            color: white;
+            letter-spacing: 1.3px;
+            font-size: 18px;
+
+        }
+
+
+     
+
+        .soldout_free {
+            color: rgba(175, 0, 35, 0.863);
+            font-size: 17.5px;
+            letter-spacing: 1.4px;
+            margin-left: 223px;
+            margin-top: 55px;
+            display: block;
+            font-weight: 500;
+            
+        }
+
+        
+
+        .my_awards {
+            text-align: center;
+        }
+
+        .timeline {
+            margin-top: 113px;
+            width: 73.9%;
+            margin-left: 190px;
+        }
+
+        i {
+            font-size: 16px;
+        }
+
+        .timeline_text {
+            padding-top: 0.1px;
+            padding-left: 14px;
+        }
+
+        .timeline_p {
+            font-size: 19.2px;
+            font-weight: 400;
+            line-height: 33px;
+
+        }
+
+        #new_single {
+            background-color: black;
+            color: white;
+            margin-top: 76px;
+            height: 758px;
+            width: 100%;
+        }
+
+        .resim_yuvarlak {
+            border-radius: 100%;
+            width: 500px;
+            height: 500px;
+            object-fit: cover;
+            position: absolute;
+
+        }
+
+        .music_admitted_text {
+            font-style: italic;
+            font-weight: 500;
+            font-size: 80px;
+            letter-spacing: 0;
+            margin-bottom: 0;
+        }
+
+        .fotolar {
+            margin-top: 100px;
+            width: 73%;
+            margin-left: auto;
+            margin-right: auto;
+            height: 318px;
+            color: white;
+            font-size: 29px;
+            font-weight: 700;
+            text-align: center;
+
+        }
+
+        .foto1 {
+            float: left;
+            height: 100%;
+            width: 348.33px;
+            margin-right: 32px;
+            background: url(img/fotolar_foto1.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .foto2 {
+            float: left;
+            height: 100%;
+            width: 348.33px;
+            margin-right: 32px;
+            background: url(img/fotolar_foto2.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .foto3 {
+            float: left;
+            height: 100%;
+            width: 348.33px;
+            background: url(img/fotolar_foto3.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+
+
+        #discography {
+            margin-top: 91px;
+            background: linear-gradient(rgba(0, 0, 0, 0.350), rgba(0, 0, 0, 0.350)), url(img/discography_bg.jpg);
+            background-size: cover;
+            background-position: center;
+            height: 870px;
+            clear: both;
+            text-align: center;
+            color: white;
+            transition: 1s;
+        }
+
+        #discography>div>div {
+            transition: 0.25s;
+            transform-origin: right bottom;
+            perspective: 800px;
+            text-align: left;
+        }
+
+        #discography>div>.foto1:hover {
+
+            transform: skew(5deg) rotateY(15deg);
+
+        }
+
+        #discography>div>.foto2:hover {
+            transform-origin: top;
+
+            transform: rotateX(15deg);
+        }
+
+        #discography>div>.foto3:hover {
+
+            transform: skew(-5deg) rotateY(-15deg);
+        }
+
+        .sene {
+            margin-top: 225px;
+            font-size: 19px;
+            color: #e4e4e4;
+            margin-bottom: 0;
+            padding-left: 15px;
+        }
+
+        .sene_alt {
+            margin-top: 0px;
+            padding-left: 15px;
+        }
+
+        #foto_2 {
+            margin-top: 44.5px;
+            width: 73.5%;
+            height: 720px;
+            margin-left: auto;
+            margin-right: auto;
+
+
+        }
+        .formtext{
+            float:left;width: 330px;height: 61px;border-radius: 4px;
+            border:2px solid black;
+            font-size: 19px;
+            font-weight: 400;
+            color: black;
+            margin-top: 50px;
+            margin-left: 6px;
+        }
+        .formtext::placeholder{
+            display:inline-block;
+            color: black;
+            padding-left: 13px;
+            font-family: "DM Sans", sans-serif;
+        }
+        #formtextarea::placeholder{
+            padding-top: 13px;            
+            display:inline-block;
+            color: black;
+            font-family: "DM Sans", sans-serif;
+
+        }
+        #gonder{
+            background-color: rgb(255, 45, 85);
+            
+            border:none;
+            border-radius: 40px;
+            width: 170px;
+            height: 62px;
+            color: white;
+            font-family: "DM Sans", sans-serif;
+            font-size: 19px;
+            font-weight: 500;
+            margin-top: 20px;
+            margin-left:266px;
+            letter-spacing:1px
+        }
+       
+        #footer{
+            background-color: black;
+            height: 59px;
+            font-weight: 400;
+            font-size: 19.2px;
+            text-align: center;
+            color: white;
+            padding-top: 32.3px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navig">
+        <a href="#">
+            <h1>AudioM4 </h1>
+        </a>
+        <ul style="list-style-type: none;margin-top: 8px;">
+            <li><a href="#">Home</a> </li>
+            <li><a href="#">Live Demo<i style="margin-left: 7px;" class="fas fa-caret-down"></i></a></li>
+            <li><a href="#">Live Demo Blocks<i style="margin-left: 7px;" class="fas fa-caret-down"></i></a></li>
+        </ul>
+
+        <a class="buynow" href="#">
+            <p style="margin-top: 10px; margin-bottom: 10px;font-weight: 500;font-size: 17.5px;">Buy Now</p>
+        </a>
+    </div>
+
+    <div class="country_singer">
+        <p
+            style="font-size: 29px;margin-top: 463px;display: inline-block;color: white;margin-bottom: 0;font-weight:lighter;margin-bottom: 0;display: inline-block;">
+            COUNTRY SINGER
+        </p>
+        <i style="color: white;font-size:155px;font-weight:300;display: block;letter-spacing:0ch;">Jennifer</i>
+
+
+    </div>
+
+    <div class="dikey_cizgi"></div>
+    </div>
+
+    <div class="upcom_tour" style="text-align: center;">
+        <p style="font-size: 17.5px;font-weight:500;margin-top: 21px;margin-bottom: 9px;">Upcoming</p>
+        <p style="font-size: 80px;margin: 0;font-weight: 700;">TOUR</p>
+    </div>
+
+    <div class="tourdiv">
+        <div class="tourdiv_satir">
+            <p class="day_of_date" style="float:left;">20</p>
+            <p class="text_of_date" style="float:left;width: 105px;">November 2019</p>
+            <div class="baslik_konum" style="float:left">
+                <b class="baslik">Videotron Center</b>
+                <p class="konum">
+                    <a href=""><i class="fas fa-map-marker-alt"></i></a>
+                    Manhadtan, NY, United States
+                </p>
+            </div>
+            <a href="">
+                <div class="buyticket" style="float:left;">
+                    <p><i class="fas fa-layer-group"></i> Buy Tickets</p>
+
+                </div>
+            </a>
+        </div>
+        <div class="tourdiv_satir">
+            <p class="day_of_date" style="float:left;">06</p>
+            <p class="text_of_date" style="float:left;width: 105px;">December 2019</p>
+            <div class="baslik_konum" style="float:left">
+                <b class="baslik">Spotify On Stage</b>
+                <p class="konum">
+                    <a href=""><i class="fas fa-map-marker-alt"></i></a>
+                    Suncorp Stadium, Australia
+                </p>
+            </div>
+
+            <a class="soldout_free" style="float:left;" href="#">Sold Out</a>
+
+        </div>
+
+        <div class="tourdiv_satir">
+            <p class="day_of_date" style="float:left;">15</p>
+            <p class="text_of_date" style="float:left;width: 105px;margin-left: 55px;">February 2020</p>
+            <div class="baslik_konum" style="float:left">
+                <b class="baslik">Halloween Bitchy Land</b>
+                <p class="konum">
+                    <a href=""><i class="fas fa-map-marker-alt"></i></a>
+                    Mediolanum Forum, Italy
+                </p>
+            </div>
+            <a href="">
+                <div class="buyticket" style="float:left;">
+                    <p><i class="fas fa-layer-group"></i> Buy Tickets</p>
+
+                </div>
+            </a>
+        </div>
+
+        <div class="tourdiv_satir">
+            <p class="day_of_date" style="float:left;">28</p>
+            <p class="text_of_date" style="float:left;width: 75px;margin-left: 40px;">April 2020</p>
+            <div class="baslik_konum" style="float:left;margin-left: 110px;">
+                <b class="baslik">Cornelius - Singha Light</b>
+                <p class="konum">
+                    <a href=""><i class="fas fa-map-marker-alt"></i></a>
+                    Odyssey, United Kingdom
+                </p>
+            </div>
+            <a class="soldout_free" style="float:left;margin-left: 243px;" href="#">Free </a>
+        </div>
+        <div class="tourdiv_satir">
+            <p class="day_of_date" style="float:left;">02</p>
+            <p class="text_of_date" style="float:left;width: 75px;">June 2020</p>
+            <div class="baslik_konum" style="float:left;margin-left: 120px;">
+                <b class="baslik">Karma Kruise</b>
+                <p class="konum">
+                    <a href=""><i class="fas fa-map-marker-alt"></i></a>
+                    AMI Stadium, New Zealand
+                </p>
+            </div>
+            <a href="">
+                <div class="buyticket" style="float:left;">
+                    <p><i class="fas fa-layer-group"></i> Buy Tickets</p>
+
+                </div>
+            </a>
+
+        </div>
+    </div>
+    <div class="resim_yazi"
+        style="background-color: black;text-align: right;height: 700px;width: 100%;clear: both;color: white; margin-top: 70px;">
+        <div class="yazi" style="width: 46.8%;float:left;margin-top: 146px;">
+            <h2 style="font-size: 29px;">Music is like a dream. One that I cannot hear.</h2>
+
+            <p style="width: 643px;padding-left: 65px;line-height: 1.4;font-size: 17.5px;">Lorem ipsum dolor sit amet,
+                consectetur
+                adipiscing elit. Donec ullamcorper neque dapibus ipsum semper,
+                sit amet luctus turpis porttitor. Ut libero ante, varius quis ligula in, consectetur tortor.</p>
+            <p style="width: 643px;padding-left: 65px;margin-top: 26px;line-height: 1.4;font-size: 17.5px;">Proin
+                aliquet neque nibh,
+                pretium rutrum quam mattis a. Morbi vitae sodales metus. Pellentesque vel elit
+                ullamcorper, magna nec, dictum purus. Nullam scelerisque nisi eu lacus elementum, ac sodales nulla
+                congue.</p>
+            <img src="img/imza.png" alt="Resim bulunamadı." style="margin-top: 15px;">
+        </div>
+        <div class="resim" style="width: 52%;float:left;">
+            <img src="img/ust2.jpg" alt="Resim bulunamadı." height="700px">
+        </div>
+
+    </div>
+
+    <div class="dikey_cizgi2"></div>
+
+    <div class="my_awards">
+        <p style="font-size: 17.5px;margin-bottom: 0;margin-top: 19px;">My</p>
+        <p style="font-size:80px;margin-top: 7px;margin-bottom: 0;font-weight: 700;"><b>AWARDS</b></p>
+    </div>
+
+    <div class="timeline">
+        <div id="yataycizgi" style="background-color: black;height: 1px;width: 100%;margin-bottom: 55px;">
+
+            <div style="position: absolute;top: 2933.5px;left: 285px;">
+                <p class="timeline_tarih">2007</p>
+                <a href="#?" class="timeline_ab"
+                    style="border-radius: 50px;width: 10px;height: 10px;border:1px solid black;display: inline-block;margin-left: 10px;"></a>
+            </div>
+
+            <div style="position: absolute;top: 2933.5px;left: 474px;">
+                <p class="timeline_tarih">2008</p>
+                <a href="#?" class="timeline_a"
+                    style="border-radius: 50px;width: 10px;height: 10px;border:1px solid black;display: inline-block;margin-left: 10px;"></a>
+            </div>
+
+            <div style="position: absolute;top: 2933.5px;left: 659px;">
+                <p class="timeline_tarih">2011</p>
+                <a href="#?" class="timeline_a"
+                    style="border-radius: 50px;width: 10px;height: 10px;border:1px solid black;display: inline-block;margin-left: 10px;"></a>
+            </div>
+
+            <div style="position: absolute;top: 2933.5px;left: 838px;">
+                <p class="timeline_tarih">2012</p>
+                <a href="#?" class="timeline_a"
+                    style="border-radius: 50px;width: 10px;height: 10px;border:1px solid black;display: inline-block;margin-left: 10px;"></a>
+            </div>
+            <div style="position: absolute;top: 2933.5px;left: 1020px;">
+                <p class="timeline_tarih">2016</p>
+                <a href="#?" class="timeline_a"
+                    style="border-radius: 50px;width: 10px;height: 10px;border:1px solid black;display: inline-block;margin-left: 10px;"></a>
+            </div>
+            <div style="position: absolute;top: 2933.5px;left: 1208px;">
+                <p class="timeline_tarih">2019</p>
+                <a href="#?" class="timeline_a"
+                    style="border-radius: 50px;width: 10px;height: 10px;border:1px solid black;display: inline-block;margin-left: 10px;"></a>
+            </div>
+
+        </div>
+        <div class="timeline_text">
+            <h3 style="font-size: 28.5px;font-weight: 700;margin-bottom: 0px;">AIM Independent Music Awards</h3>
+            <h4 style="color:#767676;font-size: 19px; margin-top: 6px;font-weight: 500;">Best Small Label</h4>
+            <p class="timeline_p" style="margin-top: 43px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Vestibulum in fermentum tellus. Etiam turpis
+                metus, mattis vel ullamcorper sed, convallis eget tellus. Aliquam luctus nisl justo, iaculis maximus
+                tortor hendrerit eget. Quisque vehicula nisl eget tincidunt auctor. Donec vitae justo aliquet est luctus
+                tincidunt eget eu mi. Aenean eget diam a lectus maximus pharetra. Praesent semper, est nec ornare
+                luctus, risus ligula scelerisque libero.</p>
+            <p class="timeline_p" style="margin-top: 30px;margin-bottom: 0px;">
+                Praesent dignissim ex sed gravida accumsan. Quisque malesuada lorem non urna molestie, maximus posuere
+                nisi consectetur. Curabitur eu quam nec magna rhoncus molestie. Morbi diam nibh, facilisis sed ante nec,
+                interdum faucibus sapien. Integer risus justo, malesuada sit amet vehicula.</p>
+
+
+        </div>
+    </div>
+
+    <div id="new_single">
+        <img style="z-index: 2;top: 3588px;left: 190px;" class="resim_yuvarlak" src="img/new_single_1.jpg"
+            alt="Resim bulunamadı.">
+        <img style="z-index: 1;top: 3610px;left:460px;width: 600px;height: 600px;" class="resim_yuvarlak"
+            src="img/new_single_2.jpg" alt="Resim bulunamadı.">
+        <img style="top: 3727px;left: 830px;" class="resim_yuvarlak" src="img/new_single_3.jpg" alt="Resim bulunamadı.">
+        <div style="position: absolute;top: 3962px;left:205px;z-index: 5;">
+            <h1 style="font-size: 80px;margin-bottom: 0;">NEW SINGLE</h1>
+            <p style="font-size: 19.23px;margin-top: 9px;width: 700px;line-height: 1.7;">Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit. In
+                consequat, mauris ut varius feugiat, lacus ipsum
+                sagittis ligula. Music is THE BEST <a style="color: rgb(255, 45, 85);text-decoration: underline;"
+                    href="">LISTEN NOW </a> </p>
+        </div>
+
+    </div>
+
+    <div class="dikey_cizgi" style="margin-top: 61px;"></div>
+    <div class="music_admitted" style="width: 100%;text-align: center;">
+        <p class="music_admitted_text"
+            style="line-height: 1;margin-top: 20px;margin-bottom: 0;width: 85%;margin-left: auto;margin-right: auto;font-size: 80px;font-weight: 500;">
+            Music, admitted to the soul, becomes a sort of spirit</p>
+
+        <div class="dikey_cizgi" style="margin-top: 20px;"></div>
+        <i style="font-size: 39px;margin-top: 30px;" class="far fa-star"></i>
+    </div>
+
+    <div class="fotolar">
+        <div class="foto1">
+            <p style="margin-top: 140px;">New Album</p>
+        </div>
+        <div class="foto2">
+            <p style="margin-top: 140px;">Tours</p>
+        </div>
+        <div class="foto3">
+            <p style="margin-top: 140px;">News</p>
+        </div>
+    </div>
+
+    <div id="discography">
+        <p style="visibility: hidden;">a</p>
+        <div style="margin-top: 40px;background-color: white;" class="dikey_cizgi"></div>
+        <p style="font-size: 17.5px;font-weight: 500;margin-top: 19px;margin-bottom: 0;">Discography</p>
+        <h3 style="font-size: 80px;font-weight: 700;margin-top: 9px;">ALBUMS</h3>
+        <div class="fotolar">
+            <div class="foto1"
+                style="background:url(img/new_single_2.jpg);background-size: cover;background-position: center;width: 345px;float:left;">
+                <p class="sene">2018</p>
+                <p class="sene_alt">Motivation</p>
+
+            </div>
+            <div class="foto2"
+                style="background:url(img/fotolar_foto2.jpg);background-size:  cover;background-position: center;width: 345px;">
+                <p class="sene">2019</p>
+                <p class="sene_alt">Upbeating</p>
+            </div>
+
+
+            <div class="foto3"
+                style="background:url(img/new_single_1.jpg);background-size: cover;background-position: center;width: 345px;">
+                <p class="sene">2020</p>
+                <p class="sene_alt">Pop Summer</p>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div id="foto_2">
+        <div style="float:left;width: 540px;height:700px;">
+            <div
+                style="width: 540px;height:700px;background:url(img/new_single_1.jpg);background-size: 950px 700px;background-position: center;">
+            </div>
+            <p style="padding-left: 15px;font-size: 17.5px;font-weight: 300;width: 500px;">Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit. In consequat, mauris ut varius feugiat, lacus ipsum sagittis ligula, id
+                vehicula ipsum lacus sollicitudin dolor. </p>
+        </div>
+
+        <div
+            style="margin-left: 30px;float:left;margin-top: 63.5px;width: 540px;height:700px;background:url(img/new_single_3.jpg);background-size: 1050px 700px;background-position: center;">
+        </div>
+
+    </div>
+
+    <div style="clear:left;background-color: black;margin-top: 145px;height: 1045px;text-align: center;color:white;"
+        id="video">
+        <p style="margin:0;visibility: hidden;">a</p>
+        <div style="background-color: white;margin-top: 40px;" class="dikey_cizgi2"></div>
+        <p style="font-size: 17.5px;margin-bottom: 0;margin-top: 20px;">Latest</p>
+        <p style="font-size: 80px;margin-bottom: 0;margin-top: 7.5px;font-weight: 700;">VIDEO</p>
+
+        <video style="margin-top: 57.5px;" width="73%" height="606" controls>
+            <source src="movie/video.mp4" type="video/mp4">
+            Tarayıcınız Video oynatıcı desteklememektedir.
+        </video>
+
+    </div>
+
+    <div class="dikey_cizgi2" style="margin-top: 60px;"></div>
+    <div class="my_awards">
+        <p style="font-size: 17.5px;margin-bottom: 0;margin-top: 20px;">Write Us</p>
+        <p style="font-size: 80px;margin-bottom: 0;margin-top: 7.5px;font-weight: 700;">CONTACTS</p>
+    </div>
+
+    <div id="formdiv"
+        style="margin-top: 56px;width: 87.5%;margin-left: auto;margin-right: auto;border:2px solid black;height: 414.5px;margin-bottom: 90px;">
+        <div style="width: 43%;height: 100%;float:left;">
+            <h4 style="font-weight: 700;font-size: 29px;padding-top: 30px;padding-left: 62px;margin:0;margin-top: 20px;">Send us a message</h4>
+            <p style="font-weight: 400;font-size: 19px;padding-left: 62px;width: 390px; line-height: 33px;margin-top: 26px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper neque dapibus ipsum semper,
+                sit amet luctus turpis porttitor. Ut libero ante, varius quis ligula in, aliquet consectetur tortor.</p>
+        </div>
+        <div id="form" style="float:left;width: 57%;height: 100%;">
+            <form method="POST">
+                <input class="formtext"  type="text" name="name" id="yourname" placeholder="Your Name">
+                <input class="formtext" style="margin-left: 10px;" type="email" name="email" id="youremail" placeholder="Your Email">
+                <textarea id="formtextarea" class="formtext" style="clear:left;margin-top: 17px;width: 679px;height: 140px;" name="message"  cols="30" rows="10" placeholder="Message"></textarea>
+                <input id="gonder"  type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+
+    <div id="footer">
+        © Copyright 2019 Mobirise - All Rights Reserved
+    </div>
+
+
+
+
+</body>
+
+</html>
